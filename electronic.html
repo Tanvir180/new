@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bootstrap</title>
+		<!-- Fac Icon -->
+		<link rel="icon" type="text/css" href="assets/img/logo.png">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<!-- Owl Carsul -->
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<!-- Magicpopup -->
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="assets/css/animate.min.css">
+		<!-- Fontawesome CSS -->
+		<link rel="stylesheet" href="assets/icon/css/font-awesome.min.css">
+		<!-- Style CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		<style type="text/css" media="screen">
+		
+		.card-img-top{
+				height:250px !important;
+				
+			}
+		.card:hover{
+			border: 2px solid black;
+			border-radius: 5%;
+			box-shadow: 4px 5px 6px #000;
+		
+			background-color: #c7c7c7;
+		}
+			/*.pos{
+			height:600px;
+			width: 400px;
+			
+			padding: 10px;
+			border:1px solid black;
+			border-radius: 5%;
+		
+			position: fixed;
+			left: 70px;
+			top: 100px;
+			text-align:center;
+			font-weight: bold;
+			font-size: 20px;
+		}*/
+		.top{
+			height:50px;
+			width: 50px;
+			background: red;
+			opacity: .6;
+			padding: 10px;
+			border:1px solid black;
+			border-radius: 10%;
+			color: white;
+			position: fixed;
+			right: 30px;
+			bottom: 30px;
+			text-align:center;
+			font-weight: bold;
+			font-size: 20px;
+		}
+			.card-img-top:hover{
+				padding: 10px;
+				transition: 0.7s;
+			}
+		
+		</style>
+	</head>
+	<body>
+		
+		<!-- Nav Start -->
+		<nav class="navbar navbar-expand-lg navbar-light   shadow">
+			<a href="#" class="navbar-brand">
+				<img src="assets/img/large.png" alt="LOGO" class="max-h-80 mx-3">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+			
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item mx-4  p-2 " >
+						<a href="index.html" class="nav-link"><i class="fa fa-home home" aria-hidden="true"></i>&nbsp Home</a>
+					</li>
+					
+					<li class="nav-item active mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-shopping-bag home" aria-hidden="true"></i>&nbsp Shop</a>
+						
+					</li>
+					<li class="nav-item mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-user home" aria-hidden="true"></i>&nbsp profile</a>
+					</li>
+					<li class="nav-item mx-4  p-2">
+						<a href="#" class="nav-link "><i class="fa fa-shopping-cart home" aria-hidden="true"></i>&nbsp Cart</a>
+					</li>
+				</ul>
+			</div>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Enter Your Keywords..." aria-label="Search">
+				<button class="btn btn-outline-dark my-2 my-sm-0 font-weight-bold" type="submit">Search</button>
+			</form>
+		</nav>
+		<!-- nav End -->
+		
+		
+		<!-- Section Part Start-->
+		<section>
+			<!-- <div class="container"> -->
+				<div class="row mx-3">
+					<div class="col-sm-3">
+						<div class="left-sidebar bg-dark my-5 pos">
+							<h2 class="font-weight-bold">Category</h2>
+							<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							
+							<div class="panel panel-default ">
+								<div class="panel-heading bg-primary ">
+									<h4 class="panel-title ">
+									<a data-toggle="collapse" data-parent="#accordian" href="#dress" class="text-white font-weight-bold">
+										<span class="badge pull-right  text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+										Dress
+									</a>
+									</h4>
+								</div>
+								<div id="dress" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordian" href="#mens">
+														<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+														Gents Fashion
+													</a>
+													</h4>
+												</div>
+												<div id="mens" class="panel-collapse collapse">
+													<div class="panel-body">
+														<ul>
+															<li><a href="shop.html">Shirt</a></li>
+															<li><a href="shop.html">Pant</a></li>
+															<li><a href="#shop.html">T-Shirt</a></li>
+															<li><a href="#shop.html">Panjabi</a></li>
+															<li><a href="shop.html">Coat</a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+											<div class="panel panel-default">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordian" href="#womens">
+														<span class="badge pull-right"><i class="fa fa-plus"></i></span>
+														Ladis Fashion
+													</a>
+													</h4>
+												</div>
+												<div id="womens" class="panel-collapse collapse">
+													<div class="panel-body">
+														<ul>
+															<li><a href="ladis-fashion.html">Three Piece</a></li>
+															<li><a href="ladis-fashion.html">Shari</a></li>
+															<li><a href="ladis-fashion.html">Western Dress</a></li>
+															<li><a href="ladis-fashion.html">Lehenga</a></li>
+															
+														</ul>
+													</div>
+												</div>
+											</div>
+											<li><a href="kids_fashion.html" class="mx-4 font-weight-bold">Kids Fashion</a></li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							
+							<!-- <div class="panel panel-default">
+									<div class="panel-body bg-secondary py-2 px-3">
+											<a href="Watch.html" class="text-white font-weight-bold ">Watch</a>
+									</div>
+							</div> -->
+							<div class="panel panel-default">
+								<div class="panel-heading bg-secondary">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian" href="#watch" class="text-white font-weight-bold">
+										<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+										Watch
+									</a>
+									</h4>
+								</div>
+								<div id="watch" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="watch.html">Analog Watch</a></li>
+											<li><a href="watch.html">Smart Watch</a></li>
+											
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+
+											<div class="panel panel-default">
+								<div class="panel-heading bg-info">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian" href="#shoes" class="text-white font-weight-bold">
+										<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+										Shoes
+									</a>
+									</h4>
+								</div>
+								<div id="shoes" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="shoes.html">Man</a></li>
+											<li><a href="shoes.html">Woman</a></li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading bg-danger">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordian" href="#electronic" class="text-white font-weight-bold">
+										<span class="badge pull-right text-white font-weight-bold"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></span>
+										Electronics Device
+									</a>
+									</h4>
+								</div>
+								<div id="electronic" class="panel-collapse collapse">
+									<div class="panel-body">
+										<ul>
+											<li><a href="#laptop">Laptop</a></li>
+											<li><a href="#tv">Tv</a></li>
+											<li><a href="#phone">Phone</a></li>
+											
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<!--/category-products-->
+							
+						</div>
+					</div>
+				</div>
+					
+					<div class="col-sm-9 padding-right my-5">
+						<div class="features_items"><!--features_items-->
+						<h2 class="title text-center bg-dark text-white font-weight-bold ">Electronics Device</h2>
+						<div class="container">
+							<h2 id="laptop">Laptop</h2>
+							<div class="row">
+								
+								<!-- Single card Start -->
+								<div class="col-md-4 card border-danger bg-secondary m-2" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End -->
+							</div>
+						</div>
+						<div class="container">
+							<h2 id="tv">TV</h2>
+							<div class="row">
+								
+								<!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End -->
+							</div>
+						</div>
+						
+					
+						<div class="container">
+							<h2 id="phone">Phone</h2>
+							<div class="row">
+								
+								<!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End --><!-- Single card Start -->
+								<div class="col-md-4 card" style="width: 18rem;">
+									<img src="assets/img/person-adding-clothes-cart-closeup-online-shopping-campaign.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+										<a href="#" class="btn btn-primary">Go somewhere</a>
+									</div>
+								</div>
+								<!-- Single card End -->
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+		<!-- </div> -->
+	</section>
+	<!-- Section Part End -->
+	<!-- TOP Start -->
+	<a href="#" class="top"><i class="fa fa-angle-double-up" aria-hidden="true"></a>
+	<!-- TOP End -->
+	<!-- Side Bar Start -->
+	<!-- jQuery JS -->
+	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+	<!-- Popper JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- CountUp JS -->
+	<script src="assets/js/countUp.min.js"></script>
+	<!-- Owl Curousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Magicpopup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- wow JS -->
+	<script src="assets/js/wow.min.js"></script>
+	<!-- Main JS -->
+	<script src="assets/js/main.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+</body>
+</html>
